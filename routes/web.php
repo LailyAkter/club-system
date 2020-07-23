@@ -42,7 +42,6 @@ Route::middleware('auth')->namespace('Admin')->group(function(){
     Route::post('/profile/update','SettingController@profileUpdate');
     Route::get('/password/change','SettingController@passwordChange');
     Route::post('change/password','SettingController@changePassword');
-    
 });
 
 Route::get('login/github', 'Auth\LoginController@redirectToProvider');

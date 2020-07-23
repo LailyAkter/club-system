@@ -57,7 +57,7 @@ class DesignationController extends Controller
 
         Toastr::success('Designation Saved Successfully','Success');
 
-        return redirect('dashboard');
+        return redirect()->route('designation.index');
     }
 
     /**

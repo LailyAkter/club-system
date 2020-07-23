@@ -3,10 +3,10 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url('dashboard')}}">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-icon">
+                    <i class="fas fa-university" aria-hidden="true"></i>
                 </div>
-                <div class="sidebar-brand-text">Club Syestem</div>
+                <div class="sidebar-brand-text">Embassy Information</div>
             </a>
 
             <!-- Divider -->
@@ -30,28 +30,28 @@
 
             <li class="nav-item active">
                 <a class="nav-link" href="{{route('country.index')}}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fas fa-globe" aria-hidden="true"></i>
                     <span>Country</span>
                 </a>
             </li>
 
             <li class="nav-item active">
                 <a class="nav-link" href="{{route('designation.index')}}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fas fa-users" aria-hidden="true"></i>
                     <span>Designation</span>
                 </a>
             </li>
 
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('soft/country')}}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fas fa-archive" aria-hidden="true"></i>
                     <span>Country Soft Delete</span>
                 </a>
             </li>
 
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('soft/designation')}}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fas fa-trash" aria-hidden="true"></i>
                     <span>Designation Soft Delete</span>
                 </a>
             </li>
@@ -59,7 +59,7 @@
 
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('audits')}}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fas fa-history" aria-hidden="true"></i>
                     <span>History</span>
                 </a>
             </li>

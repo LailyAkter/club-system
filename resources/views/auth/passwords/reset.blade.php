@@ -82,6 +82,7 @@
                                         we'll send you a link to reset your password!</p>
                                 </div>
                                 <form class="user">
+                                    
                                     <div class="form-group">
                                         <input type="email" class="form-control form-control-user"
                                             id="exampleInputEmail" aria-describedby="emailHelp"

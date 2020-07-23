@@ -8,6 +8,7 @@ use Brian2694\Toastr\Facades\Toastr;
 use Auth;
 use Hash;
 use App\User;
+use Intervention\Image\Facades\Image;
 
 class SettingController extends Controller
 {
@@ -22,10 +23,21 @@ class SettingController extends Controller
             'email' => 'required',
         ]);
 
-        $user = Auth::user();
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->save();
+        // if($request->hasFile('avatar')){
+            $avatar = $request->file('avatar');
+			$filename  = time() . '.' . $avatar->getClientOriginalExtension();
+            $path = public_path('uploads/avatars/' . $filename);
+            Image::make($avatar->getRealPath())->resize(468, 249)->save($path);
+            $user = Auth::user();
+            $user->avatar = 'uploads/avatars/'.$filename;
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->save();
+			// $user->save();
+        // }
+
+        // $user = Auth::user();
+        
 
         Toastr::success('Profile Updated Successfully','Success');
 
@@ -59,8 +71,6 @@ class SettingController extends Controller
         }else{
             Toastr::error('Current Password Not Match','Error');
         }
-        //redirect()->route( 'clients.show' )->with( [ 'id' => $id ] )
         return redirect()->back();
     }
-
 }

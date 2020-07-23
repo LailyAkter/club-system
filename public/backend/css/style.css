@@ -1,15 +1,4 @@
-/*!
- * Start Bootstrap - SB Admin 2 v4.0.7 (https://startbootstrap.com/template-overviews/sb-admin-2)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/blob/master/LICENSE)
- */
 
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
@@ -9354,9 +9343,9 @@ button.bg-dark:focus {
   font-weight: bolder !important;
 }
 
-.font-italic {
+/* .font-italic {
   font-style: italic !important;
-}
+} */
 
 .text-white {
   color: #fff !important;
@@ -10584,19 +10573,19 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
+  background: url("https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640_960_720.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .bg-register-image {
-  background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
+  background: url("https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640_960_720.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .bg-password-image {
-  background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
+  background: url("https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640_960_720.jpg");
   background-position: center;
   background-size: cover;
 }

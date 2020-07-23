@@ -52,7 +52,7 @@ class CountryController extends Controller
 
         Toastr::success('Country Saved Successfully','Success');
 
-        return redirect()->route('designation.create');
+        return redirect()->route('country.index');
     }
 
     /**

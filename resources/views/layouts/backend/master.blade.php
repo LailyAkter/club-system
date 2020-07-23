@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{asset('backend/css/style.css')}}" rel="stylesheet">
 
     <!-- toastr -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
@@ -88,7 +88,7 @@
     <script src="{{asset('backend/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="{{asset('backend/js/sb-admin-2.min.js')}}"></script>
+    <script src="{{asset('backend/js/script.js')}}"></script>
 
     <!-- toastr -->
     <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>

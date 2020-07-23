@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{asset('backend/css/style.css')}}" rel="stylesheet">
 
 </head>
 
@@ -38,7 +38,7 @@
     <script src="{{asset('backendn/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="{{asset('backend/js/sb-admin-2.min.js')}}"></script>
+    <script src="{{asset('backend/js/script.js')}}"></script>
 
 </body>
 

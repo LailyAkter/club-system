@@ -21,7 +21,7 @@
                         <tr>
                             <th>Model</th>
                             <th>Action</th>
-                            <!-- <th>User</th> -->
+                            <th>User</th>
                             <th>Old Values</th>       
                             <th>New Values</th>
                             <th>Url</th>
@@ -33,7 +33,7 @@
                         <tr>
                             <th>Model</th>
                             <th>Action</th>
-                            <!-- <th>User</th> -->
+                            <th>User</th>
                             <th>Old Values</th>       
                             <th>New Values</th>
                             <th>Url</th>
@@ -46,8 +46,7 @@
                             <tr>
                                 <td>{{ $audit->auditable_type }} (id: {{ $audit->auditable_id }})</td>
                                 <td>{{ $audit->event }}</td>
-                                
-
+                                <td>{{$audit->user}}</td>            
                                 <td>
                                     <table class="table table-bordered" id="dataTable" width="100%" >
                                             @foreach($audit->old_values as $attribute  => $value)                                 

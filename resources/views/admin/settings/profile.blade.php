@@ -10,7 +10,7 @@
                         <h3 class="card-title">Profile Update</h3>
                     </div>
                     <div class="card-body">
-                        <form action="{{url('/profile/update')}}" method='post'>
+                        <form action="{{url('/profile/update')}}" method='post'  enctype='multipart/form-data'>
                         @csrf
                             <div class="form-group">
                                 <label> Name</label>
@@ -38,6 +38,17 @@
                                 />
                                 @if($errors->has('email'))
                                     <span class='invalid-feedback'>Email is Required</span>
+                                @endif
+                            </div>
+                            <div class="form-group">
+                                <label>Upload Profile Image</label>
+                                <input 
+                                    type="file" 
+                                    class="form-control @error('avatar') is-invalid @enderror" 
+                                    name='avatar'
+                                />
+                                @if($errors->has('avatar'))
+                                    <span class='invalid-feedback'>Avatar is Required</span>
                                 @endif
                             </div>
                             <button type='submit' class='btn btn-success'>Update Profile</button>
